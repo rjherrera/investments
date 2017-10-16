@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <img src="<%= @project.image_url %>" height="100">
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @project.company %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @project.address %>
+</p>
+
+<p>
+  <strong>Stage:</strong>
+  <%= @project.stage %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @project.due_date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Extra info:</strong>
+  <%= @project.extra_info %>
+</p>
+
+<p>
+  <strong>Pictures:</strong>
+  <% @project.pictures.each do |picture| %>
+    <img src="<%= picture.url %>" height="100">
+  <% end %>
+</p>
+
+<p>
+  <strong>Blueprints:</strong>
+  <% @project.blueprints.each do |blueprint| %>
+    <img src="<%= blueprint.url %>" height="100">
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
