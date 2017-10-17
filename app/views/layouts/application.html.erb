@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Investments</title>
+    <title>inveriKs</title>
     <%= csrf_meta_tags %>
-
+    <%= yield :view_specific_css %>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="ui top fixed inverted big menu" id="menu_header">
+      <div class="ui container" id="menu_container">
+        <%= link_to('inveriKs', root_path, class: 'borderless item', id: 'logo') %>
+        <div class="right menu">
+          <%= link_to('inicio', root_path, class: 'item') %>
+          <%= link_to('nosotros', root_path, class: 'item') %>
+          <%= link_to('servicios', root_path, class: 'item') %>
+          <%= link_to('contacto', root_path, class: 'item') %>
+          <%= link_to(root_path, class: 'item') do %>
+          <strong>INVIERTE</strong>
+          <% end %>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

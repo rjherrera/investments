@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+@import "semantic-ui";
+
+#menu_header {
+  background-color: rgba(0,0,0,0.6);
+}
+
+#menu_container {
+  width: 100%;
+}
+
+#logo {
+  font-size: 1.5em;
+  line-height: 0.5em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#menu_container .item {
+  font-variant: small-caps;
+}

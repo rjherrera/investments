@@ -1,0 +1,30 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.logo_text {
+  font-size: 3em;
+  color: white;
+  letter-spacing: -1px;
+  line-height: 100%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.header_text {
+  font-size: 1.3em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 80%;
+}
+
+#header_container {
+  background-size: cover;
+}
+
+#apply_segment {
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}

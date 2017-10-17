@@ -1,0 +1,87 @@
+<!-- HEADER_CONTAINER -->
+<div class="ui fluid container" id="header_container">
+  <div class="ui fluid container" style="background-color: rgba(0,0,0,0.3);padding-top: 12em;padding-bottom: 12em;">
+
+    <div class="ui container" style="padding-top:2em;display: flex; flex-direction: row; justify-content: space-between;align-items: center">
+      <div class="ui container" style="flex: 0 1 40%">
+        <h1 class="ui mini inverted header">
+            <div class="content logo_text">
+            inveriKs
+            </div>
+            <div class="sub header" style="font-size:0.7em;">
+              <i>Empieza a asegurar tu futuro desde ya. Accede a las mejores oportunidades en inversion inmobiliaria desde <b>hoy</b>.</i>
+            </div>
+          </h1>
+      </div>
+      <div class="ui container" style="flex: 0 1 40%">
+        <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
+            <h2 class="ui inverted icon header">
+              <i class="building icon"></i>
+              <div class="content">
+                Únete al mundo de la inversión inmobiliaria
+              </div>
+            </h2>
+            <%= link_to "Invierte Ahora", root_path, class: "ui big inverted white button" %>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- HEADER_CONTAINER -->
+
+<!-- RECRUITERS CONTAINER -->
+<div class="ui fluid container" id="recruiter_container">
+  <div class="ui fluid container" style="background-color: rgba(0,0,0,0.3);padding-top: 10em;padding-bottom: 10em;"">
+    <div class="ui container" style="display: flex; flex-direction: row; justify-content: space-between;align-items: center">
+        <div class="ui container" style="flex: 0 1 30%">
+          <div class="ui three column grid" style="margin-top: 10px;">
+            <div class="column">
+              <i class="building massive inverted icon"></i>
+            </div>
+            <div class="column">
+              <i class="building outline massive inverted icon"></i>
+            </div>
+            <div class="column">
+              <i class="building massive inverted icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui container" style="flex: 0 1 60%; text-align: right">
+          <h1 class="ui inverted header">
+            <div class="content logo_text">
+              ¿Quieres empezar a asegurar tu futuro?
+            </div>
+            <div class="sub header" style="font-size:0.8em;">
+              <i>Conoce las mejores oportunidades de inverión desde <b>ya</b>.</i>
+            </div>
+          </h1>
+          <%= link_to "Invierte Ahora", root_path, class: "ui big white inverted button" %>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- RECRUITERS CONTAINER -->
+
+<script>
+$(function(){
+  var header = $('#header_container');
+  var backgrounds = new Array(
+      'url(https://www.hdwallpapers.in/walls/relax-HD.jpg)',
+      'url(https://i.pinimg.com/originals/f5/43/f0/f543f084e149c3594d080991bb046ee0.jpg)',
+      'url(http://www.henryfordlivewell.com/wp-content/uploads/2015/07/shutterstock_178068386.jpg)',
+      'url(http://123hdwallpaperpic.com/download/20150615/high-tech-apple-imac-2560x1600.jpg)'
+      //'url(https://cdn.gobankingrates.com/wp-content/uploads/2016/08/0-Main-Saklakova-iStock-501519496-848x477.jpg)'
+  );
+  var current = 0;
+  function nextBackground() {
+      current++;
+      current = current % backgrounds.length;
+      header.css('background-image', backgrounds[current]);
+  }
+  setInterval(nextBackground, 5000);
+
+  header.css('background-image', backgrounds[0]);
+});
+</script>
