@@ -31,6 +31,21 @@ You can create the database with the usual rails' instructions, but make sure to
 
 There is a basic [seed](db/seeds.rb) included.
 
+#### Frontend development helpers
+
+As rails is a very slow reloader when it comes to assets, I strongly recomend to use `livereload`, for extremely fast `sass` (and every asset) reloading. Before setting this up, in the [Gemfile](Gemfile), under the development group, some gems were included, so they have to be installed as usual. To configure livereload, follow these steps:
+
+* In the project folder execute this to initialize the config:
+```bash
+guard init livereload
+```
+* In the same project folder, in a separate terminal tab, so that you can run both, rails and livereload, execute this:
+```bash
+guard -P livereload
+```
+
+That's it!
+
 #### Services (job queues, cache servers, search engines, etc.)
 
 None yet
