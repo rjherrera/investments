@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20171018022121) do
     t.string "cellphone"
     t.string "email"
     t.integer "salary"
-    t.boolean "preapproval"
+    t.boolean "preapproval", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

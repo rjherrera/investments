@@ -7,7 +7,7 @@ class CreateProspects < ActiveRecord::Migration[5.1]
       t.string :cellphone
       t.string :email
       t.integer :salary
-      t.boolean :preapproval
+      t.boolean :preapproval, default: false
 
       t.timestamps
     end

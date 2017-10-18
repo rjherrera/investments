@@ -47,9 +47,9 @@
     <option value=7>Más de $3.500.000</option>
   </select>
 
-  <div class="field">
-    <%= form.label :preapproval %>
-    <%= form.check_box :preapproval, id: :prospect_preapproval %>
+  <div class="ui checkbox">
+    <input type="checkbox" name="prospect[preapproval]">
+    <label>Preapproval</label>
   </div>
 
   <div class="actions">
