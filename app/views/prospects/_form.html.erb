@@ -36,10 +36,16 @@
     <%= form.text_field :email, id: :prospect_email %>
   </div>
 
-  <div class="field">
-    <%= form.label :salary %>
-    <%= form.number_field :salary, id: :prospect_salary %>
-  </div>
+  <select class="ui fluid dropdown" name="prospect[salary]">
+    <option>Rango de renta</option>
+    <option value=1>Menos de $1.000.000</option>
+    <option value=2>Entre $1.000.000 y $1.500.000</option>
+    <option value=3>Entre $1.500.000 y $2.000.000</option>
+    <option value=4>Entre $2.000.000 y $2.500.000</option>
+    <option value=5>Entre $2.500.000 y $3.000.000</option>
+    <option value=6>Entre $3.000.000 y $3.500.000</option>
+    <option value=7>Más de $3.500.000</option>
+  </select>
 
   <div class="field">
     <%= form.label :preapproval %>
@@ -50,3 +56,8 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+
+<script type="text/javascript">
+  $('.ui.dropdown').dropdown();
+</script>
