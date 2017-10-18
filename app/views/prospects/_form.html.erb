@@ -1,8 +1,7 @@
-<%= form_with(model: prospect, local: true) do |form| %>
+<%= form_with(model: prospect, local: true, :html => {:class => "ui form"}) do |form| %>
   <% if prospect.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(prospect.errors.count, "error") %> prohibited this prospect from being saved:</h2>
-
       <ul>
       <% prospect.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -13,51 +12,67 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :prospect_name %>
+    <%= form.text_field :name, id: :prospect_name, :required => true %>
   </div>
 
   <div class="field">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :prospect_last_name %>
+    <%= form.text_field :last_name, id: :prospect_last_name, :required => true %>
   </div>
 
   <div class="field">
     <%= form.label :rut %>
-    <%= form.text_field :rut, id: :prospect_rut %>
+    <%= form.text_field :rut, id: :prospect_rut, :required => true %>
   </div>
 
   <div class="field">
     <%= form.label :cellphone %>
-    <%= form.text_field :cellphone, id: :prospect_cellphone %>
+    <%= form.text_field :cellphone, id: :prospect_cellphone, :required => true %>
   </div>
 
   <div class="field">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :prospect_email %>
+    <%= form.email_field :email, id: :prospect_email, :required => true %>
   </div>
 
-  <select class="ui fluid dropdown" name="prospect[salary]">
-    <option>Rango de renta</option>
-    <option value=1>Menos de $1.000.000</option>
-    <option value=2>Entre $1.000.000 y $1.500.000</option>
-    <option value=3>Entre $1.500.000 y $2.000.000</option>
-    <option value=4>Entre $2.000.000 y $2.500.000</option>
-    <option value=5>Entre $2.500.000 y $3.000.000</option>
-    <option value=6>Entre $3.000.000 y $3.500.000</option>
-    <option value=7>Más de $3.500.000</option>
-  </select>
-
-  <div class="ui checkbox">
-    <input type="checkbox" name="prospect[preapproval]">
-    <label>Preapproval</label>
+  <div class="field">
+    <%= form.label :salary %>
+    <select class="ui dropdown" name="prospect[salary]" required>
+      <option>Rango de renta</option>
+      <option value=1>Menos de $1.000.000</option>
+      <option value=2>Entre $1.000.000 y $1.500.000</option>
+      <option value=3>Entre $1.500.000 y $2.000.000</option>
+      <option value=4>Entre $2.000.000 y $2.500.000</option>
+      <option value=5>Entre $2.500.000 y $3.000.000</option>
+      <option value=6>Entre $3.000.000 y $3.500.000</option>
+      <option value=7>Más de $3.500.000</option>
+    </select>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="field">
+    <%= form.label :preapproval %>
+
+    <div class="ui checkbox">
+      <input type="checkbox" name="prospect[preapproval]">
+      <label>Preapproval</label>
+    </div>
   </div>
+
+  <button class="ui button" type="submit">Submit</button>
 <% end %>
 
 
 <script type="text/javascript">
-  $('.ui.dropdown').dropdown();
+$('.ui.dropdown').dropdown();
+$('.ui.form').form({
+  fields: {
+    salary: {
+      identifier: 'prospect[salary]',
+      rules: [{
+        type: 'regExp',
+        value: /\d{1,7}/i,
+      }]
+    }
+  }
+});
 </script>
