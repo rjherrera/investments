@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :prospects
   resources :pictures
   resources :projects
   devise_for :admins

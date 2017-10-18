@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_name: MyString
+  rut: MyString
+  cellphone: MyString
+  email: MyString
+  salary: 1
+  preapproval: false
+
+two:
+  name: MyString
+  last_name: MyString
+  rut: MyString
+  cellphone: MyString
+  email: MyString
+  salary: 1
+  preapproval: false
