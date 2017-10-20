@@ -11,33 +11,33 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :prospect_name, :required => true %>
+    <label>Nombres</label>
+    <%= form.text_field :name, id: :prospect_name, :required => true, :placeholder => 'Juan José' %>
   </div>
 
   <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :prospect_last_name, :required => true %>
+    <label>Apellidos</label>
+    <%= form.text_field :last_name, id: :prospect_last_name, :required => true, :placeholder => 'González Martínez' %>
   </div>
 
   <div class="field">
-    <%= form.label :rut %>
-    <%= form.text_field :rut, id: :prospect_rut, :required => true %>
+    <label>RUT</label>
+    <%= form.text_field :rut, id: :prospect_rut, :required => true, :placeholder => '15.864.577-7' %>
   </div>
 
   <div class="field">
-    <%= form.label :cellphone %>
-    <%= form.text_field :cellphone, id: :prospect_cellphone, :required => true %>
+    <label>Teléfono</label>
+    <%= form.text_field :cellphone, id: :prospect_cellphone, :required => true, :placeholder => '92591287' %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.email_field :email, id: :prospect_email, :required => true %>
+    <label>Email</label>
+    <%= form.email_field :email, id: :prospect_email, :required => true, :placeholder => 'jjgonzalez@mail.com' %>
   </div>
 
   <div class="field">
-    <%= form.label :salary %>
-    <select class="ui dropdown" name="prospect[salary]" required>
+    <label>Rango de renta</label>
+    <select class="ui dropdown" name="prospect[salary]" required placeholder="123">
       <option>Rango de renta</option>
       <option value=1>Menos de $1.000.000</option>
       <option value=2>Entre $1.000.000 y $1.500.000</option>
@@ -50,20 +50,20 @@
   </div>
 
   <div class="field">
-    <%= form.label :preapproval %>
+    <label>Pre-aprobación</label>
 
     <div class="ui checkbox">
       <input type="checkbox" name="prospect[preapproval]">
-      <label>Preapproval</label>
+      <label>Pre-aprobación</label>
     </div>
   </div>
 
-  <button class="ui button" type="submit">Submit</button>
+  <button class="ui button" type="submit">Enviar</button>
 <% end %>
 
 
 <script type="text/javascript">
-$('.ui.dropdown').dropdown();
+$('.ui.dropdown').dropdown({placeholder:'Your placeholder'});
 $('.ui.form').form({
   fields: {
     salary: {

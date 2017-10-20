@@ -1,5 +1,15 @@
-<h1>New Prospect</h1>
+<div class="form-container">
 
-<%= render 'form', prospect: @prospect %>
+	<% if notice %>
+	<div class="ui success message">
+		<div class="header">
+		    Tu prospecto ha sido enviado con éxito
+		</div>
+		<p>Serás contactado por un ejecutivo de Inverius</p>
+	</div>
+	<% end %>
+	
+	<%= render 'form', prospect: @prospect %>
 
-<%= link_to 'Back', prospects_path %>
+</div>
+
