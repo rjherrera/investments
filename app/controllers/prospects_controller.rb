@@ -1,5 +1,6 @@
 class ProspectsController < ApplicationController
   before_action :set_prospect, only: [:show, :edit, :update, :destroy]
+  before_action :check_admin, only: [:edit, :update, :destroy, :index, :show]
 
   # GET /prospects
   # GET /prospects.json
@@ -65,6 +66,12 @@ class ProspectsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_prospect
       @prospect = Prospect.find(params[:id])
+    end
+
+    def check_admin
+      if current_admin == nil
+        redirect_to root_path
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
