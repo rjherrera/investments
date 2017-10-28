@@ -1,0 +1,15 @@
+<div class="form-container">
+
+	<% if notice %>
+	<div class="ui success message">
+		<div class="header">
+		    Tu prospecto ha sido enviado con éxito
+		</div>
+		<p>Serás contactado por un ejecutivo de Inverius</p>
+	</div>
+	<% end %>
+	
+	<%= render 'form', prospect: @prospect %>
+
+</div>
+
