@@ -2,9 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  outline: none;
+}
 
-.logo_text {
-  font-size: 3em;
+.title {
+  font-size: 3.5em;
   color: white;
   letter-spacing: -1px;
   line-height: 100%;
@@ -12,19 +15,146 @@
   font-variant: small-caps;
 }
 
-.header_text {
-  font-size: 1.3em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
-  line-height: 80%;
-}
-
-#header_container {
-  background-size: cover;
+.text {
+  font-size:0.75em!important;
 }
 
 #apply_segment {
   background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+
+.items-holder {
+  padding-top: 12em;
+  padding-bottom: 12em;
+  background-color: rgba(0,0,0,0.3);
+
+  .items-container {
+    padding-top:2em;
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+#header_container {
+  background-size: cover;
+  margin-bottom: 0;
+
+  .items-left {
+    flex: 0.25 1 40%;
+  }
+
+  .items-right {
+    flex: 0.25 1 40%;
+  }
+}
+
+#future_container {
+  background-image: url(dark-blur-blurred-gradient.jpg);
+  // background-image: url(http://cdn.pcwallart.com/images/dark-blue-gradient-wallpaper-4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .items-holder {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .items-left {
+    flex: 30%
+  }
+
+  .items-right {
+    text-align: right;
+    flex: 70%
+  }
+}
+
+#stats_container {
+  // background-image: url(http://cdn.pcwallart.com/images/dark-blue-gradient-wallpaper-4.jpg);
+  // background-image: url(street-blurred.jpg);
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .items-holder {
+    background-color: rgba(0,0,0,0);
+    padding: 3em 0;
+  }
+
+  .items-center {
+    width: 100%!important;
+  }
+}
+
+#mission_container {
+  background-image: url(windshield-blurred.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .items-center {
+    width: 70%!important;
+    margin: 0 auto;
+    color: white;
+    text-align: center
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .signature {
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+}
+
+
+#projects_container {
+  background-image: url(http://www.publicdomainpictures.net/pictures/70000/velka/old-white-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  .items-holder {
+    background-color: rgba(0,0,0,0.9);
+    padding: 5em 0;
+  }
+
+  .items-center {
+    width: 100%!important;
+  }
+}
+
+.background-holder {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.first {
+    background-image: url(http://123hdwallpaperpic.com/download/20150615/high-tech-apple-imac-2560x1600.jpg);
+  }
+  &.second {
+    background-image: url(https://i.pinimg.com/originals/f5/43/f0/f543f084e149c3594d080991bb046ee0.jpg);
+  }
+  &.third {
+    background-image: url(http://www.henryfordlivewell.com/wp-content/uploads/2015/07/shutterstock_178068386.jpg);
+  }
+  &.fourth {
+    background-image: url(https://www.hdwallpapers.in/walls/relax-HD.jpg);
+  }
+}
+
+.slick-dots {
+  bottom: 5%!important;
 }
