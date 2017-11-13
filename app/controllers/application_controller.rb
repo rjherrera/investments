@@ -2,9 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    array =* (1..3)
-    @projects = []
-    array.each {@projects.push(Project.first())}
+    @projects = Project.all()
     render 'home'
   end
 
