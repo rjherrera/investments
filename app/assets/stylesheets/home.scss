@@ -102,13 +102,13 @@
 }
 
 #mission_container {
-  background-image: url(street-blurred.jpg);
+  background-image: url(https://files.adventure-life.com/71/77/3/8vzxmgj7/fullsize.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   .items-holder {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
   }
 
   .items-center {
@@ -168,7 +168,7 @@
     background-image: url(http://123hdwallpaperpic.com/download/20150615/high-tech-apple-imac-2560x1600.jpg);
   }
   &.second {
-    background-image: url(building-modern.jpg);
+    background-image: url(asset-path('building-modern.jpg'));
   }
   &.third {
     background-image: url(https://www.hdwallpapers.in/walls/relax-HD.jpg);
