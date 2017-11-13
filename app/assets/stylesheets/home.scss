@@ -42,6 +42,11 @@
 #header_container {
   background-size: cover;
   margin-bottom: 0;
+  height: 100vh;
+
+  .items-holder {
+    height: 100vh;
+  }
 
   .items-left {
     flex: 0.25 1 40%;
@@ -53,11 +58,12 @@
 }
 
 #future_container {
-  background-image: url(dark-blur-blurred-gradient.jpg);
-  // background-image: url(http://cdn.pcwallart.com/images/dark-blue-gradient-wallpaper-4.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url(dark-blur-blurred-gradient.jpg);
+  // // background-image: url(http://cdn.pcwallart.com/images/dark-blue-gradient-wallpaper-4.jpg);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.8);
 
   .items-holder {
     background-color: rgba(0,0,0,0.5);
@@ -101,6 +107,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  .items-holder {
+    background-color: rgba(0,0,0,0.8);
+  }
+
   .items-center {
     width: 70%!important;
     margin: 0 auto;
@@ -134,25 +144,39 @@
   .items-center {
     width: 100%!important;
   }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .items-left {
+    flex: 50%
+  }
+
+  .items-right {
+    flex: 50%
+  }
 }
 
 .background-holder {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 
   &.first {
     background-image: url(http://123hdwallpaperpic.com/download/20150615/high-tech-apple-imac-2560x1600.jpg);
   }
   &.second {
-    background-image: url(https://i.pinimg.com/originals/f5/43/f0/f543f084e149c3594d080991bb046ee0.jpg);
+    background-image: url(building-modern.jpg);
   }
   &.third {
-    background-image: url(http://www.henryfordlivewell.com/wp-content/uploads/2015/07/shutterstock_178068386.jpg);
-  }
-  &.fourth {
     background-image: url(https://www.hdwallpapers.in/walls/relax-HD.jpg);
+    // background-image: url(http://www.henryfordlivewell.com/wp-content/uploads/2015/07/shutterstock_178068386.jpg);
   }
+  // &.fourth {
+  //   background-image: url(https://www.hdwallpapers.in/walls/relax-HD.jpg);
+  // }
 }
 
 .slick-dots {
