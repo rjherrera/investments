@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem "dotenv-rails"
+gem 'rails_12factor', group: :production
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
