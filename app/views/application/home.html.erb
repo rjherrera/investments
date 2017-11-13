@@ -1,87 +1,318 @@
 <!-- HEADER_CONTAINER -->
 <div class="ui fluid container" id="header_container">
-  <div class="ui fluid container" style="background-color: rgba(0,0,0,0.3);padding-top: 12em;padding-bottom: 12em;">
-
-    <div class="ui container" style="padding-top:2em;display: flex; flex-direction: row; justify-content: space-between;align-items: center">
-      <div class="ui container" style="flex: 0 1 40%">
-        <h1 class="ui mini inverted header">
-            <div class="content logo_text">
-            InveriuS
-            </div>
-            <div class="sub header" style="font-size:0.7em;">
-              <i>Empieza a asegurar tu futuro desde ya. Accede a las mejores oportunidades en inversion inmobiliaria desde <b>hoy</b>.</i>
-            </div>
-          </h1>
-      </div>
-      <div class="ui container" style="flex: 0 1 40%">
-        <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
-            <h2 class="ui inverted icon header">
-              <i class="building icon"></i>
-              <div class="content">
-                Únete al mundo de la inversión inmobiliaria
+  <div class="ui fluid container background-holder first">
+    <div class="ui fluid container items-holder">
+      <div class="ui container items-container">
+        <div class="ui container items-left">
+          <h1 class="ui mini inverted header">
+              <div class="content title">
+              InveriuS
               </div>
-            </h2>
-            <%= link_to "Invierte Ahora", root_path, class: "ui big inverted white button" %>
-          </div>
+              <div class="sub header text">
+                <i>Invertir en propiedades es <b>facil, rápido</b> y <b>seguro</b></i>
+              </div>
+            </h1>
+        </div>
+        <div class="ui container items-right">
+          <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
+              <h2 class="ui inverted icon header">
+                <i class="building icon"></i>
+                <div class="content">
+                  Únete al mundo de la inversión inmobiliaria
+                </div>
+              </h2>
+              <%= link_to "Invierte Ahora", new_prospect_path, class: "ui big inverted white button" %>
+            </div>
+        </div>
       </div>
     </div>
-
   </div>
+  <div class="ui fluid container background-holder second">
+    <div class="ui fluid container items-holder">
+      <div class="ui container items-container">
+        <div class="ui container items-left">
+          <h1 class="ui mini inverted header">
+              <div class="content title">
+              InveriuS
+              </div>
+              <div class="sub header text">
+                <i>Nuestra experiencia hace la diferencia. Que no te engañen, asesórate <b>sin comisión</b></i>
+              </div>
+            </h1>
+        </div>
+        <div class="ui container items-right">
+          <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
+              <h2 class="ui inverted icon header">
+                <i class="building icon"></i>
+                <div class="content">
+                  Únete al mundo de la inversión inmobiliaria
+                </div>
+              </h2>
+              <%= link_to "Invierte Ahora", new_prospect_path, class: "ui big inverted white button" %>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui fluid container background-holder third">
+    <div class="ui fluid container items-holder">
+      <div class="ui container items-container">
+        <div class="ui container items-left">
+          <h1 class="ui mini inverted header">
+              <div class="content title">
+              InveriuS
+              </div>
+              <div class="sub header text">
+                <i>Desde solo <b>$5990 diarios</b>, puedes transformarte en un inversionista</i>
+              </div>
+            </h1>
+        </div>
+        <div class="ui container items-right">
+          <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
+              <h2 class="ui inverted icon header">
+                <i class="building icon"></i>
+                <div class="content">
+                  Únete al mundo de la inversión inmobiliaria
+                </div>
+              </h2>
+              <%= link_to "Invierte Ahora", new_prospect_path, class: "ui big inverted white button" %>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--   <div class="ui fluid container background-holder fourth">
+    <div class="ui fluid container items-holder">
+      <div class="ui container items-container">
+        <div class="ui container items-left">
+          <h1 class="ui mini inverted header">
+              <div class="content title">
+              InveriuS
+              </div>
+              <div class="sub header text">
+                <i>Nuestra experiencia te permitirá tener un futuro tranquilo, partiendo <b>hoy</b>.</i>
+              </div>
+            </h1>
+        </div>
+        <div class="ui container items-right">
+          <div class="ui raised right floated segment inverted center aligned" id="apply_segment">
+              <h2 class="ui inverted icon header">
+                <i class="building icon"></i>
+                <div class="content">
+                  Únete al mundo de la inversión inmobiliaria
+                </div>
+              </h2>
+              <%= link_to "Invierte Ahora", new_prospect_path, class: "ui big inverted white button" %>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
 </div>
 <!-- HEADER_CONTAINER -->
 
-<!-- RECRUITERS CONTAINER -->
-<div class="ui fluid container" id="recruiter_container">
-  <div class="ui fluid container" style="background-color: rgba(0,0,0,0.3);padding-top: 10em;padding-bottom: 10em;"">
-    <div class="ui container" style="display: flex; flex-direction: row; justify-content: space-between;align-items: center">
-        <div class="ui container" style="flex: 0 1 30%">
-          <div class="ui three column grid" style="margin-top: 10px;">
+<!-- FUTURE CONTAINER -->
+<div class="ui fluid container" id="future_container">
+  <div class="ui fluid container items-holder">
+    <div class="ui container items-container">
+        <div class="ui container items-left">
+          <div class="ui three column grid">
             <div class="column">
               <i class="building massive inverted icon"></i>
             </div>
             <div class="column">
               <i class="building outline massive inverted icon"></i>
             </div>
-            <div class="column">
-              <i class="building massive inverted icon"></i>
-            </div>
           </div>
         </div>
 
-        <div class="ui container" style="flex: 0 1 60%; text-align: right">
+        <div class="ui container items-right">
           <h1 class="ui inverted header">
-            <div class="content logo_text">
+            <div class="content title">
               ¿Quieres empezar a asegurar tu futuro?
             </div>
-            <div class="sub header" style="font-size:0.8em;">
+            <div class="sub header text">
               <i>Conoce las mejores oportunidades de inverión desde <b>ya</b>.</i>
             </div>
           </h1>
-          <%= link_to "Invierte Ahora", root_path, class: "ui big white inverted button" %>
+          <%= link_to "Invierte Ahora", new_prospect_path, class: "ui big white inverted button" %>
         </div>
     </div>
   </div>
 </div>
-<!-- RECRUITERS CONTAINER -->
+<!-- FUTURE CONTAINER -->
 
-<script>
-$(function(){
-  var header = $('#header_container');
-  var backgrounds = new Array(
-      'url(https://www.hdwallpapers.in/walls/relax-HD.jpg)',
-      'url(https://i.pinimg.com/originals/f5/43/f0/f543f084e149c3594d080991bb046ee0.jpg)',
-      'url(http://www.henryfordlivewell.com/wp-content/uploads/2015/07/shutterstock_178068386.jpg)',
-      'url(http://123hdwallpaperpic.com/download/20150615/high-tech-apple-imac-2560x1600.jpg)'
-      //'url(https://cdn.gobankingrates.com/wp-content/uploads/2016/08/0-Main-Saklakova-iStock-501519496-848x477.jpg)'
-  );
-  var current = 0;
-  function nextBackground() {
-      current++;
-      current = current % backgrounds.length;
-      header.css('background-image', backgrounds[current]);
-  }
-  setInterval(nextBackground, 5000);
+<!-- STATS CONTAINER -->
+<div class="ui fluid container" id="stats_container">
+  <div class="ui fluid container items-holder">
+    <div class="ui container items-container">
+      <div class="items-center" id="statistics">
+        <div class="ui big statistic">
+          <div class="value">
+            100%
+          </div>
+          <div class="label">
+            De nuestros clientes<br>nos recomiendan
+          </div>
+        </div>
+        <div class="ui big statistic">
+          <div class="value">
+            1000+
+          </div>
+          <div class="label">
+            Departamentos<br>en stock
+          </div>
+        </div>
+        <div class="ui big statistic">
+          <div class="value">
+            70%+
+          </div>
+          <div class="label">
+            Ha decidido<br>reinvertir con nosotros
+          </div>
+        </div>
+        <div class="ui big statistic">
+          <div class="value">
+            500 mil+
+          </div>
+          <div class="label">
+            UF vendidas
+          </div>
+        </div>
+        <div class="ui big statistic">
+          <div class="value">
+            100%
+          </div>
+          <div class="label">
+            De nuestro equipo<br>es experto
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- STATS CONTAINER -->
 
-  header.css('background-image', backgrounds[0]);
-});
+<!-- MISSION CONTAINER -->
+<div class="ui fluid container" id="mission_container">
+  <div class="ui fluid container items-holder">
+    <div class="ui container items-container">
+      <div class="ui basic segment items-center" id="quotes">
+        <p><i class="quote left big icon"></i>En menos de un mes, me asesoraron, invertí, y me arrendaron el departamento<br><br><i class="signature">Javiera</i></p>
+        <p><i class="quote left big icon"></i>Llevaba meses buscando el departamento ideal y lo conseguí con las mejores condiciones<br><br><i class="signature">Gabriela</i></p>
+        <p><i class="quote left big icon"></i>Me mostraron mis alternativas y con la confianza del equipo de InveriuS me atrví a invertir<br><br><i class="signature">Camilo</i></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MISSION CONTAINER -->
+
+<!-- PROJECTS CONTAINER -->
+<div class="ui fluid container" id="projects_container">
+  <div class="ui fluid container items-holder">
+    <div class="ui container items-container">
+        <div class="ui container items-left">
+          <h1 class="ui mini inverted header">
+              <div class="content title">
+              Conoce nuestros proyectos
+              </div>
+              <div class="sub header text">
+                <i>Descubre nuestra gran variedad para invertir</i>
+              </div>
+            </h1>
+        </div>
+        <div class="ui container items-right">
+          <div class="ui special two stackable cards">
+            <% @projects.each do |project| %>
+              <div class="card">
+                <div class="blurring dimmable image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <%= link_to 'Ver Proyecto', project, class: "ui inverted button" %>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="<%= project.image_url %>">
+                </div>
+                <div class="content">
+                  <div class="header"><%= project.name %></div>
+                  <div class="meta">
+                    <span class="date"><%= project.due_date %></span>
+                  </div>
+                </div>
+                <div class="extra content">
+                  <i class="building icon"></i>
+                  <%= project.stage %>
+                </div>
+              </div>
+            <% end %>
+            <button class="ui big white inverted button" style="height: 10%; margin-top: 22%; margin-left: 16%;">Ver más</button>
+          </div>
+
+        </div>
+      </div>
+  </div>
+</div>
+<!-- PROJECTS CONTAINER -->
+
+
+<script type="text/javascript">
+  $('.special.cards .image').dimmer({
+    on: 'hover'
+  });
+
+  $('#header_container').slick({
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    // infinite: true,
+    speed: 2000,
+    fade: true
+  });
+
+  $('#statistics').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $('#quotes').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 7500,
+    // infinite: true,
+    speed: 2000,
+    fade: true,
+    pauseOnFocus: false,
+    pauseOnHover: false
+  });
 </script>
