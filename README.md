@@ -52,4 +52,8 @@ None yet
 
 #### Deployment instructions
 
-None yet
+To deploy to Heroku, remember to configure the project at heroku website, the environment variables and then just do:
+```bash
+git push heroku master
+```
+
