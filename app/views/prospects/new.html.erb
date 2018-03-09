@@ -1,14 +1,24 @@
 <div class="form-container">
 
 	<% if notice %>
-	<div class="ui success message">
-		<div class="header">
-		    Tu prospecto ha sido enviado con éxito
+		<div class="ui success message">
+			<div class="header">
+			    Tu prospecto ha sido enviado con éxito
+			</div>
+			<p>Serás contactado por un ejecutivo de Inverius</p>
 		</div>
-		<p>Serás contactado por un ejecutivo de Inverius</p>
-	</div>
 	<% end %>
-	
+
+	<h2 class="ui header">
+    <div class="content title">
+    	Invierte
+    </div>
+    <div class="sub header text">
+      Ingresa tus datos para invertir con nosotros y te contactaremos <b>muy pronto.</b>
+    </div>
+  </h2>
+
+
 	<%= render 'form', prospect: @prospect %>
 
 </div>
